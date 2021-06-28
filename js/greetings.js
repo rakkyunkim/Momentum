@@ -15,6 +15,7 @@ function onLoginSubmit(event){
     logOut.classList.remove(HIDDEN_CLASS_NAME);
     //save the user name in the local storage
     localStorage.setItem(USERNAME_KEY, typedUsername);
+    greeting.classList.add("fadeIn");
     //display hello username.
     paintGreetings(typedUsername); 
 }
