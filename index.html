@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Castoro:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Castoro&family=Kirang+Haerang&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css">
+    <title>Momentum</title>
+</head>
+<body>
+    <div class="clockWithAmorPm" id="clock">
+        <h2 id="clock">00:00:00</h2>
+        <span class="amOrPm"></span>
+        <h3 id="date"></h3>
+    </div>
+    <h1 id="greeting" class="hidden"></h1>
+    <form id="login-form" class="hidden">
+        <input 
+        required 
+        maxlength="15"
+        type="text" 
+        placeholder="What is your name?"
+        />
+        <button class="logInAndOut logIn">Log In</button>
+    </form>
+    <div class="todo-box" id="todo-list"></div>
+        <form id="todo-form">
+            <input placeholder="Write your todo list." required type="text" class="todo-input">
+        </form>
+        <ol id="todo-list"></ol>
+    </div>
+    <button id="log-out" class="logInAndOut hidden"> Log Out</button>
+    <div id="quote">
+        <span></span>
+        <p class="author"></p>
+    </div>
+    <div id="weather">
+        <span></span>
+        <p class="city"></p>
+    </div>
+    <script src="js/greetings.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+</body>
+</html>
