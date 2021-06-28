@@ -24,14 +24,16 @@ function paintTodo(newTodo){
     li.id = newTodo.id;
     const span = document.createElement("span");
     span.innerText = newTodo.text;
-    span.classList.add("animate-todo");
+    span.classList.add("fadeIn");
     const button = document.createElement("button");
     button.classList.add("list-button");
     button.innerText = "❌";
+    button.classList.add("fadeIn");
     button.addEventListener("click", deleteTodo);
     const lineButton = document.createElement("button");
     lineButton.classList.add("list-button-check");
     lineButton.innerText = "✔️";
+    lineButton.classList.add("fadeIn");
     lineButton.addEventListener("click", slashText);
     li.appendChild(span);
     li.appendChild(lineButton);
@@ -61,6 +63,7 @@ function handleTodoSubmit(event){
     todos.push(newTodoObj);
     saveTodos();
     paintTodo(newTodoObj);
+
 }
 
 todoForm.addEventListener("submit", handleTodoSubmit);
