@@ -91,7 +91,7 @@ body::-webkit-scrollbar{
     top:12%;
     left:50%;
     transform: translate(-50%, -50%);
-    font-size: 150px;
+    font-size: 10vw;
 }
 form{
     font-family: 'Castoro', serif;
@@ -109,10 +109,10 @@ form{
 }
 #greeting{
     position: absolute;
-    top: 37%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 70px;
+    font-size: 5vw;
     font-family: 'NanumSquare', sans-serif;
 }
 .fadeIn{
@@ -161,14 +161,14 @@ form{
     width: 300px;
 }
 #date{
-    font-size: 50px;
+    font-size: 3vw;
     margin-top: 20px;
 }
 #todo-list{
     position: absolute;
     top:55%;
     left:28%;
-    font-size: 20px;
+    font-size: 1.5vw;
     font-family: 'Kirang Haerang', cursive;
     overflow: auto;
 }
@@ -198,7 +198,7 @@ form{
     top:98%;
     left:50%;
     transform: translate(-50%, -50%);
-    font-size: 20px;
+    font-size: 1.5vw;
     height:150px;
     font-family: 'Castoro', serif;
 }
@@ -207,7 +207,7 @@ form{
     top:10%;
     left:90%;
     transform: translate(-50%, -50%);
-    font-size: 30px;
+    font-size: 2vw;
     font-family: 'Shadows Into Light', cursive;
     word-spacing: -1ch;
     width: 300px;
@@ -258,11 +258,11 @@ form{
     position:absolute;
     top:75%;
     left:97%;
-    font-size: 50px;
+    font-size: 3vw;
 }
 .clockWithAmorPm{
     margin-top:70px;
-    width: 700px;
-    height:200px;
+    width: 50vw;
+    height:28vh;
     font-family: 'NanumSquare', sans-serif;
 }
