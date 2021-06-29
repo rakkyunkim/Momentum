@@ -20,14 +20,14 @@ const days = ['Sun','Mon','Tues','Wed','Thur','Fri','Sat'];
 //using Date API to get the current time.
 function getClock(){
     const date = new Date();
-    let hours = String(date.getHours()).padStart(2, "0");
+    let hours = date.getHours()
     const minutes = String(date.getMinutes()).padStart(2, "0");
     const seconds = String(date.getSeconds()).padStart(2, "0");
-    if(parseInt(hours) > 12){
-        let intHours = parseInt(hours) - 12;
-        hours = intHours.toString();
+    if(hours > 12){
+        let intHours = hours - 12;
+        hours = String(intHours).padStart(2, "0");
         amOrpm = "PM";
-    }else if(parstInt(hours) === 12){
+    }else if(hours === 12){
         amOrpm = "PM";
     }
     else{
