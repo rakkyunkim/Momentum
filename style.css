@@ -113,7 +113,7 @@ form{
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 5vw;
-    font-family: 'NanumSquare', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 .fadeIn{
     animation: fadeIn linear 1s;
@@ -168,7 +168,7 @@ form{
     position: absolute;
     top:55%;
     left:28%;
-    font-size: 1.5vw;
+    font-size: 25px;
     font-family: 'Kirang Haerang', cursive;
     overflow: auto;
 }
@@ -198,7 +198,7 @@ form{
     top:98%;
     left:50%;
     transform: translate(-50%, -50%);
-    font-size: 1.5vw;
+    font-size: 20px;
     height:150px;
     font-family: 'Castoro', serif;
 }
