@@ -2,6 +2,7 @@ const loginForm = document.getElementById("login-form");
 const loginInput = loginForm.querySelector("input");
 const greeting = document.querySelector("#greeting");
 const logOut = document.getElementById("log-out");
+const todoform = document.getElementById("todo-form");
 
 const HIDDEN_CLASS_NAME = "hidden";
 const USERNAME_KEY = "username";
@@ -11,6 +12,7 @@ function onLoginSubmit(event){
     //prevent refreshing everytime it submits.
     event.preventDefault();
     //hide form on submit.
+    todoform.classList.remove(HIDDEN_CLASS_NAME);
     loginForm.classList.add(HIDDEN_CLASS_NAME);
     logOut.classList.remove(HIDDEN_CLASS_NAME);
     //save the user name in the local storage
@@ -41,6 +43,7 @@ if(savedUsername === null){
     loginForm.addEventListener("submit", onLoginSubmit);
 }
 else{
+    todoform.classList.remove(HIDDEN_CLASS_NAME);
     logOut.classList.remove(HIDDEN_CLASS_NAME);
     paintGreetings(savedUsername);
 }
