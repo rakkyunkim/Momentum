@@ -1,268 +1,339 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
-.hidden{
-    display: none;
+.hidden {
+  display: none;
 }
-html, body {
-    margin: 0 auto; 
-    height: 100%; 
-    overflow: hidden
+html,
+body {
+  margin: 0 auto;
+  height: 100%;
+  overflow: hidden;
 }
-.list-button, .list-button-check{
-    outline:none;
-    background: none;
-    background-color: transparent;
-    border: none;
+.list-button,
+.list-button-check {
+  outline: none;
+  background: none;
+  background-color: transparent;
+  border: none;
 }
-.list-button:hover{
-    background-color: hotpink;
+.list-button:hover {
+  background-color: hotpink;
 }
-.list-button-check:hover{
-    background-color: chartreuse;
+.list-button-check:hover {
+  background-color: chartreuse;
 }
-input::placeholder{
-    font-family: 'Kirang Haerang', cursive;
-    color: white;
+input::placeholder {
+  font-family: "Noto Sans KR", sans-serif;
+  color: white;
 }
-input[type='text']{
-    font-family: 'Kirang Haerang', cursive;
-    font-size:24px;
-    border: 0;
-    outline: 0;
-    background: transparent;
-    border-bottom: 2px solid white;
-    color: white;
+input[type="text"] {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 50px;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 2px solid white;
+  color: white;
 }
-.logInAndOut{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1vmin;
-    color: white;
-    background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 1vmin;
-    font-size: 1.5vmin;
-    border: 2px solid rgba(255, 255, 255, 0.0);
-    transition: all 100ms linear;
+input[class="todo-input"]::placeholder {
+  font-family: "Kirang Haerang", cursive;
+  color: white;
 }
-.logIn{
-    position: relative;
-    left:300px;
+input[class="todo-input"] {
+  font-size: 30px;
+  font-family: "Kirang Haerang", cursive;
 }
-.logInAndOut:hover{
-    border: white;
-    outline: white;
-    border-style: outset;
-    border-color: white;
-    border-image: initial;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+.logInAndOut {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1vmin;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 1vmin;
+  font-size: 1.5vmin;
+  border: 2px solid rgba(255, 255, 255, 0);
+  transition: all 100ms linear;
+}
+.logIn {
+  position: absolute;
+  top: 50%;
+  left: 96%;
+}
+.logInAndOut:hover {
+  border: white;
+  outline: white;
+  border-style: outset;
+  border-color: white;
+  border-image: initial;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 .img {
-    width: 100%;
-    height: 100%;
-    background-size: 100% 100%;
-    animation: fadIn 800ms ease-out;
+  width: 100%;
+  height: 100%;
+  background-size: 100% 100%;
+  animation: fadIn 800ms ease-out;
 }
 html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
 
-body{
-    margin: 0;
-    padding: 0;
-    position: relative;
-    text-align: center;
-    max-height: 100%;
-    float: left;
-    color: white;
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  text-align: center;
+  max-height: 100%;
+  float: left;
+  color: white;
 }
 body {
-    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
 }
 
-body::-webkit-scrollbar{
-    display: none;
+body::-webkit-scrollbar {
+  display: none;
 }
-#clock{
-    position: absolute;
-    top:12%;
-    left:50%;
-    transform: translate(-50%, -50%);
-    font-size: 10vw;
+#clock {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 9vw;
+  font-family: "Noto Sans KR", sans-serif;
 }
-form{
-    font-family: 'Castoro', serif;
+form {
+  font-family: "Castoro", serif;
 }
-#login-form{
-    position: absolute;
-    top: 47%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 15px;
-    font-family: inherit;
+#login-form {
+  position: absolute;
+  top: 46%;
+  left: 50%;
+  width: 500px;
+  transform: translate(-50%, -50%);
+  border-radius: 15px;
+  font-family: inherit;
 }
-#login-form:focus{
-    border: 3px red;
+#login-form:focus {
+  border: 3px red;
 }
-#greeting{
-    position: absolute;
-    top: 35%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 5vw;
-    font-family: 'Noto Sans KR', sans-serif;
+#greeting {
+  position: absolute;
+  top: 41%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 5vw;
+  font-family: "Noto Sans KR", sans-serif;
 }
-.fadeIn{
-    animation: fadeIn linear 1s;
-    -webkit-animation: fadeIn linear 1s;
-    -moz-animation: fadeIn linear 1s;
-    -o-animation: fadeIn linear 1s;
-    -ms-animation: fadeIn linear 1s;
+.fadeIn {
+  animation: fadeIn linear 1s;
+  -webkit-animation: fadeIn linear 1s;
+  -moz-animation: fadeIn linear 1s;
+  -o-animation: fadeIn linear 1s;
+  -ms-animation: fadeIn linear 1s;
 }
 @keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-  
+
 @-moz-keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-  
+
 @-webkit-keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-  
+
 @-o-keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-  
+
 @-ms-keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-#todo-form{
-    position: absolute;
-    top:51%;
-    left:50%;
-    transform: translate(-50%, -50%);
-    border-radius: 15px;
+#todo-form {
+  position: absolute;
+  top: 51%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 15px;
 }
-.todo-input{
-    width: 200px;
-    transition: width 2s;
+.todo-input {
+  width: 350px;
+  transition: width 2s;
 }
-.todo-input:focus{
-    width: 300px;
+.todo-input:focus {
+  width: 400px;
 }
-#date{
-    font-size: 3vw;
-    margin-top: 20px;
+#date {
+  position: absolute;
+  left: 40%;
+  top: 14%;
+  font-size: 3vw;
+  margin: 0;
+  font-family: "NanumSquare", sans-serif;
 }
-#todo-list{
-    position: absolute;
-    top:55%;
-    left:28%;
-    font-size: 25px;
-    font-family: 'Kirang Haerang', cursive;
-    overflow: auto;
+#todo-list {
+  position: absolute;
+  top: 55%;
+  left: 28%;
+  font-size: 25px;
+  font-family: "Kirang Haerang", cursive;
+  overflow: auto;
 }
-.animate-todo{
-    animation-duration: 3s;
-    animation-name: slidein;
+.animate-todo {
+  animation-duration: 3s;
+  animation-name: slidein;
 }
 @keyframes slidein {
-    from {
-      top:45%;
-      left:28%;
-    }
-  
-    to {
-      top:55%;
-      left:28%;
-    }
+  from {
+    top: 45%;
+    left: 28%;
   }
-#log-out{
-    position: absolute;
-    top:90%;
-    left:10%;
-    transform: translate(-50%, -50%);
+
+  to {
+    top: 55%;
+    left: 28%;
+  }
 }
-#quote{
-    position: absolute;
-    top:98%;
-    left:50%;
-    transform: translate(-50%, -50%);
-    font-size: 20px;
-    height:150px;
-    font-family: 'Castoro', serif;
+#log-out {
+  position: absolute;
+  top: 90%;
+  left: 10%;
+  transform: translate(-50%, -50%);
 }
-#weather{
-    position: absolute;
-    top:10%;
-    left:90%;
-    transform: translate(-50%, -50%);
-    font-size: 2vw;
-    font-family: 'Shadows Into Light', cursive;
-    word-spacing: -1ch;
-    width: 300px;
+#quote {
+  position: absolute;
+  top: 97%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  height: 150px;
+  font-family: "Castoro", serif;
 }
-.city{
-    margin:2px;
+#weather {
+  position: absolute;
+  word-wrap: break-word;
+  top: 10%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+  font-size: 25px;
+  font-family: "Shadows Into Light", cursive;
+  word-spacing: -1ch;
+  width: 300px;
 }
-.author{
-    margin:0;
+.city {
+  margin: 2px;
 }
-.slashText{
-    text-decoration: line-through;
-    text-decoration-color: red;
+.author {
+  margin: 0;
 }
-.todo-box{
-    margin-bottom: 8vh;
-    margin: 0 auto;
-    width: 45%;
-    resize: both;
-    height: 30vh;
-    border: 2px solid rgba(255, 255, 255, 0.4);
-    overflow-y: auto;
-    border-radius: 2vmin;
-    box-shadow: inset 0 0 50px 10px black;
-    background-color: rgba(0, 0, 0, 0.4);
-    transition: height 1s;
+.slashText {
+  text-decoration: line-through;
+  text-decoration-color: red;
+}
+.todo-box {
+  margin-bottom: 8vh;
+  margin: 0 auto;
+  width: 45%;
+  resize: both;
+  height: 30vh;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  overflow-y: auto;
+  border-radius: 2vmin;
+  box-shadow: inset 0 0 50px 10px black;
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: height 1s;
 }
 .todo-box:hover {
-    height: 32vh;
+  height: 32vh;
 }
 /* width */
 .todo-box::-webkit-scrollbar {
-    width: 10px;
+  width: 10px;
 }
-  
-  /* Track */
+
+/* Track */
 .todo-box::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px grey;
-    border-radius: 10px;
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
 }
-  
-  /* Handle */
+
+/* Handle */
 .todo-box::-webkit-scrollbar-thumb {
-    background: white;
-    border-radius: 10px;
+  background: white;
+  border-radius: 10px;
 }
-.amOrPm{
-    position:absolute;
-    top:75%;
-    left:97%;
-    font-size: 3vw;
+.amOrPm {
+  position: absolute;
+  top: 26%;
+  left: 85%;
+  font-size: 3vw;
 }
-.clockWithAmorPm{
-    margin-top:70px;
-    width: 50vw;
-    height:28vh;
-    font-family: 'NanumSquare', sans-serif;
+.clockWithAmorPm {
+  display: flex;
+  margin-top: 70px;
+  width: 50vw;
+  height: 28vh;
+  font-family: "NanumSquare", sans-serif;
+}
+
+@media (max-width: 600px) {
+  #quote {
+    font-size: 15px;
+  }
+  #clock {
+    font-size: 90px;
+  }
+  .clockWithAmorPm {
+    width: 350px;
+  }
+  .amOrPm {
+    font-size: 30px;
+    left: 99%;
+  }
+  #date {
+    font-size: 30px;
+    left: 30%;
+    top: 17%;
+  }
+  #weather {
+    left: 80%;
+  }
+  #greeting {
+    font-size: 40px;
+  }
 }
