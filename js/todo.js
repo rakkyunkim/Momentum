@@ -1,11 +1,11 @@
 const todoForm = document.getElementById("todo-form");
-const todoList = document.getElementById("todo-list");
+const todoList = document.querySelector("#todo-list");
 const todoInput = todoForm.querySelector("input");
-const todoBox = document.querySelector("div.todo-box");
+
 
 const TODOS_KEY = "todos";
 let todos = [];
-const numTodos = todos.length;
+
 
 function deleteTodo(event){
     const li = event.target.parentElement;
@@ -41,13 +41,16 @@ function paintTodo(newTodo){
     todoList.appendChild(li);
 }
 
-
 function slashText(event){
     const li = event.target.parentElement;
     for(i = 0; i < todos.length; i++){
-        if(parseInt(li.id) === todos[i].id){
+        if((parseInt(li.id) === todos[i].id) && li.classList.contains("slashText")){
+            li.classList.remove("slashText");
+        }
+        else if(parseInt(li.id) === todos[i].id){
             li.classList.add("slashText");
         }
+        
     }
 }
 function handleTodoSubmit(event){
