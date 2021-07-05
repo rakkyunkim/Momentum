@@ -334,6 +334,9 @@ form {
   #greeting {
     font-size: 40px;
   }
+  .logIn{
+    display:none;
+  }
 }
 @media (max-width: 500px) {
   #greeting {
